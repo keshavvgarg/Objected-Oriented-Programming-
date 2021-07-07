@@ -24,7 +24,29 @@ What is Object Oriented Programming?
                  (helps in avoiding duplication for example if we have to represent 4 different cars)
 */
 
-class subclass_name : access_mode base_class_name
+// Syntax for Inheritance
+class subclass_name : access_mode   base_class_name
 {
   //body of subclass
 };
+
+// Example
+class Bird{
+   private:
+   int legs;
+   string color;
+   
+   public:
+   void fly(){
+      cout << "The bird is flying\n";
+   }
+   // getter and setter methods
+}
+
+
+class Pigeon: public Bird{
+   public:
+   void pigeon_fly(){
+   cout<< "Pigeon flies..\n";
+   }
+}
