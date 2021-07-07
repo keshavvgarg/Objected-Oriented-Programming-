@@ -115,7 +115,9 @@ class Car: public Vehicle, public FourWheeler {
 // Vehicle waala apni properites set kr dega Car class me and FourWheeler apni
 // Destructors reverse order me call hote hai constructors ke
 
-// Multiple inheritance me diamond problem hoti hai, agr time ho toh pdh lena
+// Multipath inheritance.. diamond problem hoti hai, agr time ho toh pdh lena
+// hm use virtual base class se, ya path specify krke scope resolution operator se shi kr skte hai
+// First link me niche hai detail iski
 
 // Default constructor child class ke, base class ke deafult constructors ko hi call krte hai
 // Calling parameterized constructors of base class from derived class
@@ -126,6 +128,7 @@ public Child(int x, string str) : Parent(x, str) {
 }
 
 // Multilevel inheritance me sbse phle sbse uper vali class ka constructor call hota hai
+
 
 
 // Ref: https://www.geeksforgeeks.org/inheritance-in-c/
