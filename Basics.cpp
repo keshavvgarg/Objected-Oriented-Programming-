@@ -17,36 +17,41 @@ What is Object Oriented Programming?
 >> Object-Oriented-Programing allows programmers to think of software development as if they are working with real-life entities.
    In your everyday life, people have the knowledge and can-do various works/tasks.
    
+ What is a class?
+  - A class is like a blueprint for creating its objects (A class is an abstract blueprint used to create more specific, concrete objects.)
+    Classes often represent broad categories, like Car or Dog that share attributes. These classes define what attributes an instance
+    of this type will have, like color, but not the value of those attributes for a specific object.
+ 
+ What is an object?
+  - Instance (Single Occurence) of class
  
  Four main benefits of OOP
  1. Inheritance: The capability of a class to derive properties and characteristics from another class is called Inheritance. 
                  Inheritance is one of the most important feature of Object Oriented Programming.
                  (helps in avoiding duplication for example if we have to represent 4 different cars)
+                 
+ 2. Encapsulation:  (ye generally do chize refer krta hai)
+                  Encapsulation refers to the bundling of data with the methods that operate on that data, or the restricting of direct access
+                  to object's properties.
+                  
+                  Encapsulation is used to hide the values or state of a structured data object inside a class, preventing direct access to them by clients
+                  in a way that could expose hidden implementation details or violate state invariance maintained by the methods. 
+                  
+                  maan lo setAge() function age ki -ve values nhi set krne deta but agr expose kr diya toh ho jayega ye possible which we don't want
+                  
+ 3. Polymorphism:
+                 The ability of an object to take many forms
+                 
+                  
 */
 
-// Syntax for Inheritance
-class subclass_name : access_mode   base_class_name
-{
-  //body of subclass
-};
+/* How to encapsulate objects
 
-// Example
-class Bird{
-   private:
-   int legs;
-   string color;
-   
-   public:
-   void fly(){
-      cout << "The bird is flying\n";
-   }
-   // getter and setter methods
-}
+The process of implementing encapsulation can be sub-divided into two steps:
 
+1. The data members should be labeled as private using the private access specifiers
+2. The member function which manipulates the data members should be labeled as public using the public access specifier
 
-class Pigeon: public Bird{
-   public:
-   void pigeon_fly(){
-   cout<< "Pigeon flies..\n";
-   }
-}
+*/
+
+// Ref: https://www.geeksforgeeks.org/understanding-encapsulation-inheritance-polymorphism-abstraction-in-oops/
